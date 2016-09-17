@@ -8,6 +8,7 @@ import org.apache.log4j.Logger
 object sparkConnect 
 {
     // connect to a postgresql database
+    // bla
     def main(arg: Array[String]) 
     {
         val conf = new SparkConf()
