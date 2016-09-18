@@ -3,4 +3,6 @@ target/
 target/*
 ./.settings/
 ./.settings/*
-
+derby.log
+./metastore_db/
+./metastore_db/*
