@@ -1,13 +1,8 @@
 package com.app
 
-import org.apache.spark.SparkContext
-import org.apache.spark.SparkContext._
-import org.apache.spark.SparkConf
-import org.apache.log4j.{Level, Logger}
-
 import java.sql.{Connection, DriverManager, ResultSet};
-import org.postgresql.Driver
 
+import org.apache.log4j.{Level, Logger}
 import org.apache.spark.sql._
 
 object sparkConnect
@@ -84,6 +79,7 @@ object sparkConnect
         }
         finally
         {
+            println("exiting...")
             spark.stop                      // terminate spark session
         }
     }
